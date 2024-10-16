@@ -1,0 +1,89 @@
+{
+	"name": "Hoja de eventos 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 598043038376431,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Juma",
+					"sid": 120219782703069,
+					"parameters": {
+						"animation": "\"Move_R\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 694101624465032
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 303422927464814,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Juma",
+					"sid": 729260037148445,
+					"parameters": {
+						"animation": "\"Move_L\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 942797560016827
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-on-floor",
+					"objectClass": "Juma",
+					"sid": 643873727818514,
+					"behaviorType": "Plataforma"
+				},
+				{
+					"id": "compare-speed",
+					"objectClass": "Juma",
+					"sid": 636335692947310,
+					"behaviorType": "Plataforma",
+					"parameters": {
+						"comparison": 0,
+						"speed": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Juma",
+					"sid": 976721251879173,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 261233105290084
+		}
+	],
+	"sid": 945960881034462
+}
